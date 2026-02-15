@@ -1,1 +1,35 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background: black;
+  color: white;
+}
 
+.container,
+.display {
+  width: 100%;
+  max-width: 1200px; /* Limits width on large monitors for readability */
+  margin: 0 auto; /* Centers the content */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#display {
+  height: 70%;
+  width: 70%;
+  margin: 0 auto; /* Centers the content */
+  padding: 20px;
+  box-sizing: border-box;
+  background: red;
+  border: white 2px;
+}
+
+.cell {
+  height: 30px;
+  width: 30px;
+  background: blue;
+}

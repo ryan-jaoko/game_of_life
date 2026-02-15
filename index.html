@@ -1,35 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Full Screen Page</title>
-    <style>
-        /* This CSS ensures the page uses the full screen */
-        body, html {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            font-family: Arial, sans-serif;
-        }
-
-        .container {
-            width: 100%;
-            max-width: 1200px; /* Limits width on large monitors for readability */
-            margin: 0 auto;    /* Centers the content */
-            padding: 20px;
-            box-sizing: border-box;
-        }
-    </style>
-</head>
-<body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./stylesheets/style.css" />
+    <title>Conway's game of life</title>
+  </head>
+  <body>
     <div class="container">
-        <h1>This page is responsive</h1>
-        <p>It will adjust its width based on your device's screen size.</p>
+      <h1>Conway's game of life.</h1>
     </div>
-
-</body>
+    <div id="display" class="display"></div>
+    <script type="module" src="./scripts/main.js"></script>
+    <script src="node_modules/eruda/eruda.js"></script>
+    <script>
+      eruda.init();
+    </script>
+  </body>
 </html>
-
